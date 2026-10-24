@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.oldschoolnetwork.browser">
+ <uses-permission android:name="android.permission.INTERNET"/>
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28"/>
+ <application android:label="ON Browser" android:icon="@drawable/ic_launcher" android:theme="@style/BrowserTheme" android:hardwareAccelerated="true" android:allowBackup="false" android:usesCleartextTraffic="true">
+  <activity android:name=".BrowserActivity" android:launchMode="singleTask" android:configChanges="orientation|screenSize|keyboardHidden" android:windowSoftInputMode="adjustResize">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+   <intent-filter><action android:name="android.intent.action.VIEW"/><category android:name="android.intent.category.DEFAULT"/><category android:name="android.intent.category.BROWSABLE"/><data android:scheme="https"/><data android:scheme="http"/></intent-filter>
+  </activity>
+  <activity android:name=".BrowserSettingsActivity" android:label="Browser settings"/>
+ </application>
+</manifest>

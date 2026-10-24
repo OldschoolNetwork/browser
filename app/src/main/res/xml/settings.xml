@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+ <PreferenceCategory android:title="Page features">
+  <CheckBoxPreference android:key="javascript" android:title="JavaScript" android:summary="Run scripts supported by this device's engine." android:defaultValue="true"/>
+  <CheckBoxPreference android:key="images" android:title="Images" android:summary="Download and display page images." android:defaultValue="true"/>
+  <CheckBoxPreference android:key="storage" android:title="Website storage" android:summary="Allow websites to use local DOM storage." android:defaultValue="true"/>
+  <CheckBoxPreference android:key="cookies" android:title="Cookies" android:defaultValue="true"/>
+  <CheckBoxPreference android:key="third_party" android:title="Third-party cookies" android:summary="Available on Android 5.0 and later." android:defaultValue="false"/>
+  <CheckBoxPreference android:key="desktop" android:title="Desktop websites" android:defaultValue="false"/>
+  <CheckBoxPreference android:key="history" android:title="Remember browsing history" android:defaultValue="true"/>
+ </PreferenceCategory>
+ <PreferenceCategory android:title="Data">
+  <Preference android:key="clear_history" android:title="Clear history"/>
+  <Preference android:key="clear_data" android:title="Clear website data" android:summary="Remove cached pages, cookies and website storage."/>
+ </PreferenceCategory>
+ <PreferenceCategory android:title="About">
+  <Preference android:key="engine" android:title="System WebKit / WebView" android:summary="Android 4.0+ compatibility edition. Modern JavaScript support depends on your device. Certificate updates do not update the engine."/>
+  <Preference android:key="help" android:title="Help"/>
+ </PreferenceCategory>
+</PreferenceScreen>

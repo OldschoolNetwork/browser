@@ -1,0 +1,5 @@
+<resources>
+ <color name="page_background">#111111</color>
+ <style name="BrowserTheme" parent="android:style/Theme.Holo.NoActionBar"><item name="android:windowBackground">@color/page_background</item><item name="android:fontFamily">sans-serif</item></style>
+ <style name="ToolbarButton"><item name="android:layout_width">44dp</item><item name="android:layout_height">44dp</item><item name="android:padding">11dp</item><item name="android:background">@drawable/toolbar_button</item><item name="android:scaleType">fitCenter</item></style>
+</resources>
