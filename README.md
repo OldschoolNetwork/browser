@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="docs/branding/app-icon.png" width="96" alt="Application icon">
+</p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/branding/oldschool-network-dark.svg">
+    <img src="docs/branding/oldschool-network-light.svg" width="200" alt="Oldschool Network">
+  </picture>
+</p>
+
 # ON Browser
 
 An Android 4.0+ Holo browser interface prototype: address/search, back and forward navigation, reload, up to six tabs, bookmarks, bounded history, downloads and page-feature settings. The supplied ON Browser icon retains its transparency.
@@ -5,6 +15,13 @@ An Android 4.0+ Holo browser interface prototype: address/search, back and forwa
 **Renderer status:** this build uses the system WebView. It does not include a modern independent browser engine. Android 4.0–4.3 uses the platform WebKit; newer systems may use a Chromium-derived WebView. Modern page support depends on the installed platform renderer.
 
 JavaScript, images, storage, cookies and desktop user-agent options control page behaviour. They do not add unsupported JavaScript syntax or CSS features. Invalid HTTPS certificates are rejected; no trust-all mode is provided.
+
+## Screenshots
+
+<p>
+  <img src="docs/screenshots/browser.png" width="240" alt="Browser interface">
+  <img src="docs/screenshots/settings.png" width="240" alt="Page feature settings">
+</p>
 
 ## Build
 
